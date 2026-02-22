@@ -1,10 +1,14 @@
-// 🚩 BUGGY VERSION - DO NOT USE IN PRODUCTION
+// This is the core logic for our Mini Task Manager
 let taskList = [];
 
+/**
+ * Adds a new task to the list
+ * @param {string} taskName - The name of the task
+ */
 function addTask(taskName) {
     if (!taskName) {
-        // TYPO 1: 'consoole' instead of 'console'
-        consoole.error("Error: Task name cannot be empty!"); 
+        // FIXED: Changed 'consoole' back to 'console'
+        console.error("Error: Task name cannot be empty!");
         return;
     }
     
@@ -15,18 +19,21 @@ function addTask(taskName) {
         createdAt: new Date()
     };
     
-    // TYPO 2: 'pussh' instead of 'push'
-    taskList.pussh(newTask); 
+    // FIXED: Changed 'pussh' back to 'push'
+    taskList.push(newTask);
     console.log(`✅ Task Added: "${taskName}"`);
 }
 
+/**
+ * Displays all tasks in the console
+ */
 function listTasks() {
     console.log("\n--- YOUR CURRENT TASKS ---");
     if (taskList.length === 0) {
         console.log("No tasks found. Your list is empty!");
     } else {
-        // TYPO 3: 'forEeach' instead of 'forEach'
-        taskList.forEeach(task => { 
+        // FIXED: Changed 'forEeach' back to 'forEach'
+        taskList.forEach(task => {
             const status = task.completed ? "[X]" : "[ ]";
             console.log(`${task.id}. ${status} ${task.name}`);
         });
@@ -34,6 +41,7 @@ function listTasks() {
     console.log("---------------------------\n");
 }
 
+// Test the functions
 addTask("Learn Git Workflows");
 addTask("Setup Windsurf IDE");
 listTasks();
