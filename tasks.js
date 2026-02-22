@@ -39,7 +39,6 @@ function listTasks() {
             console.log(`${task.id}. ${status} ${task.name}`);
         });
     }
-    console.log("---------------------------\n");
 }
 
 // Test the functions
