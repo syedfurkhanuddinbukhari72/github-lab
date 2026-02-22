@@ -1,5 +1,5 @@
 // This is the core logic for our Mini Task Manager
-let taskList = [];
+let myTasks = [];
 
 /**
  * Adds a new task to the list
@@ -13,14 +13,14 @@ function addTask(taskName) {
     }
     
     const newTask = {
-        id: taskList.length + 1,
+        id: myTasks.length + 1,
         name: taskName,
         completed: false,
         createdAt: new Date()
     };
     
     // FIXED: Changed 'pussh' back to 'push'
-    taskList.push(newTask);
+    myTasks.push(newTask);
     console.log(`✅ Task Added: "${taskName}"`);
 }
 
@@ -29,11 +29,11 @@ function addTask(taskName) {
  */
 function listTasks() {
     console.log("\n--- YOUR CURRENT TASKS ---");
-    if (taskList.length === 0) {
+    if (myTasks.length === 0) {
         console.log("No tasks found. Your list is empty!");
     } else {
         // FIXED: Changed 'forEeach' back to 'forEach'
-        taskList.forEach(task => {
+        myTasks.forEach(task => {
             const status = task.completed ? "[X]" : "[ ]";
             console.log(`${task.id}. ${status} ${task.name}`);
         });
