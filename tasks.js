@@ -15,6 +15,7 @@ function addTask(taskName) {
         id: myTasks.length + 1,
         name: taskName,
         completed: false,
+        important: false,
         createdAt: new Date()
     };
     
