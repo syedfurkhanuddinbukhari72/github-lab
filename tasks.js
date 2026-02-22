@@ -43,3 +43,5 @@ function listTasks() {
 addTask("Learn Git Workflows");
 addTask("Setup Windsurf IDE");
 listTasks();
+
+function clearTasks() {}
