@@ -1,3 +1,4 @@
+// Version 1.1 - Added tracking logic.
 // This is the core logic for our Mini Task Manager
 let myTasks = [];
 
