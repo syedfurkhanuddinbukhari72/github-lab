@@ -8,9 +8,7 @@ let myTasks = [];
  */
 function addTask(taskName) {
     if (!taskName) {
-        // FIXED: Changed 'consoole' back to 'console'
-        console.error("Error: Task name cannot be empty!");
-        return;
+        taskName = "Untitled Task";
     }
     
     const newTask = {
