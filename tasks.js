@@ -50,3 +50,10 @@ addTask("Setup Windsurf IDE");
 listTasks();
 
 function clearTasks() {}
+
+
+function getTaskCount() {
+    console.log(`📊 Total Tasks: ${myTasks.length}`);
+}
+getTaskCount();
+
