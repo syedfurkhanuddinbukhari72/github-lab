@@ -21,7 +21,7 @@ function addTask(taskName) {
     
     // FIXED: Changed 'pussh' back to 'push'
     myTasks.push(newTask);
-    console.log(`🚀 New Task Created: "${taskName}"`);
+    console.log("⚠️ PRIORITY TASK ADDED: " + taskName);
 }
 
 /**
