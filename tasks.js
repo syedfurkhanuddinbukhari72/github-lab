@@ -21,7 +21,11 @@ function addTask(taskName) {
     
     // FIXED: Changed 'pussh' back to 'push'
     myTasks.push(newTask);
+<<<<<<< HEAD
     console.log("⚠️ PRIORITY TASK ADDED: " + taskName);
+=======
+    console.log("✨ Sweet! New task added: " + taskName);
+>>>>>>> feat/friendly-change
 }
 
 /**
