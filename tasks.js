@@ -1,4 +1,4 @@
-// PRO VERSION - Advanced Task Manager v2.0
+// Practice Session 1: Daily Sync - February 24, 2026
 // This is the core logic for our Mini Task Manager
 let myTasks = [];
 
