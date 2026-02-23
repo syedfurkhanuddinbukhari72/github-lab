@@ -1,4 +1,4 @@
-// Version 1.1 - Added tracking logic.
+// PRO VERSION - Advanced Task Manager v2.0
 // This is the core logic for our Mini Task Manager
 let myTasks = [];
 
