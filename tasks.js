@@ -16,16 +16,13 @@ function addTask(taskName) {
         name: taskName,
         completed: false,
         important: false,
+        priority: "normal",
         createdAt: new Date()
     };
     
     // FIXED: Changed 'pussh' back to 'push'
     myTasks.push(newTask);
-<<<<<<< HEAD
-    console.log("⚠️ PRIORITY TASK ADDED: " + taskName);
-=======
-    console.log("✨ Sweet! New task added: " + taskName);
->>>>>>> feat/friendly-change
+console.log("✨ Sweet! New task added: " + taskName);
 }
 
 /**
